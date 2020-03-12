@@ -1,35 +1,41 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <link rel="stylesheet" href="style.css">
-     <title>mario kart item box</title>
- </head>
- <body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>mario kart item box</title>
+  </head>
+  <body>
     <div>
-        <h1>Item generator</h1>
-        <p>Welcome to the mario kart item generator! please input your race postition! <input type="number"></p>
-        <p>please click the image to generate a item!</p>
-        <img src="" alt="">
-        <table>
-            <tr>
-                <th>Banana</th>
-                <th>Green Shell</th>
-                <th>Star</th>
-                <th>Golden Mushroom</th>
-                <th>Bullet Bill</th>
-            </tr>
-            <tr>
-                <td id="Banana">0</td>
-                <td id="Green-shell">0</td>
-                <td id="star">0</td>
-                <td id="Golden-mushroom">0</td>
-                <td id="Bullet-bill">0</td>
-            </tr>
+      <h1>Item generator</h1>
+      <p>
+        Welcome to the mario kart item generator! please input your race
+        postition! <input id="posNum" type="number" />
+      </p>
+      <p>please click the image to generate a item!</p>
+      <img id="clckbox" src="images/item box.png" alt="item box" />
+      <center>
+        <table border="1">
+          <tr>
+            <th>Banana</th>
+            <th>Green Shell</th>
+            <th>Star</th>
+            <th>Golden Mushroom</th>
+            <th>Bullet Bill</th>
+          </tr>
+          <tr>
+            <td id="Banana">0</td>
+            <td id="Green-shell">0</td>
+            <td id="star">0</td>
+            <td id="Golden-mushroom">0</td>
+            <td id="Bullet-bill">0</td>
+          </tr>
         </table>
-        <div>
-            <p>Results: <span id="results-text">----</span></p>
-            <img id="resultImg" src="" alt="">
-        </div>
-    </div> 
- </body>
- </html>
+      </center>
+      <div id="result-div">
+        <p>Results: <span id="results-text">----</span></p>
+        <img id="resultImg" src="" alt="" />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
