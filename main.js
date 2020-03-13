@@ -2,6 +2,9 @@
 
 //Event listener for click on image
 document.getElementById("clckbox").addEventListener("click", genItem);
+document.getElementById('p5').addEventListener('click', plus5)
+document.getElementById('BB10').addEventListener('click', BB10)
+document.getElementById('pcbtn').addEventListener('click', plusx)
 
 //declaring global vars
 let numBan = 0;
@@ -84,3 +87,30 @@ function genItem() {
       }
   }
 }
+
+function plus5() {
+
+  for(let n = 0; n < 5; n++){
+    console.log(n);
+    genItem();
+  }
+}
+
+function BB10() {
+  let count = 0;
+  while (numbullBill < 10){
+    genItem();
+    count++
+  }
+  console.log('count: ' + count);
+}
+
+function plusx() {
+
+  for(let n = 0; n < Number(document.getElementById('pcust').value); n++ ){
+    console.log(n);
+    genItem();
+  }
+}
+
+
